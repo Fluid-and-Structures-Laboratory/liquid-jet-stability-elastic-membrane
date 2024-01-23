@@ -9,5 +9,6 @@ This repository contains all the files and codes pertaining to the paper "**Liqu
 - Relaxation chamber holder.ipt : Connects the relaxation chamber to the linear stage
 - Relaxation chamber outer holder.ipt : Clamps the relaxation chamber to the Relaxation Chamber Holder
 - punch_holder.ipt : Holds the punch parallel to vertical in order to create clean circular nozzles
+- laminizer.rld : Laminarizes the flow inside the relaxation chamber
 
 
