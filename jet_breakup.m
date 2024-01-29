@@ -5,6 +5,7 @@ function [breakup_length, mean_breakup, stdv_breakup, percent_discard, t] = jet_
 num_images = 500;
 breakup_length = zeros(500,1);
 
+
 for jj = 1:500
     [image, cmap] =imread(File,jj); %Reads the first frame image
 
