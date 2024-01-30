@@ -1,5 +1,5 @@
 # jet-stability
-This repository contains all the files and codes pertaining to the paper "**Liquid jet stability through elastic planar nozzles**" (https://doi.org/10.1140/epjs/s11734-022-00656-w). Please contact Md. Emazuddin Alif (malif@vols.utk.edu) or Dr. Andrew Dickerson (adicker7@utk.edu) for further details and information. We request everyone using any portion of our code to appropriately cite the parent paper.
+This repository contains all the files and codes pertaining to the paper "**Liquid jet stability through elastic planar nozzles**" (https://doi.org/10.1140/epjs/s11734-022-00656-w). Please contact Md. Emazuddin Alif (malif@vols.utk.edu) or Dr. Andrew Dickerson (adicker7@utk.edu, dickerson@utk.edu) for further details and information. We request everyone using any portion of our code to appropriately cite the parent paper.
 
 ## CAD Models and Descriptions
 - Base_plate.ipt : Base plate along which the linear stage connected to the relaxation chamber is held
