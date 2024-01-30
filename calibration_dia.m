@@ -25,7 +25,8 @@ res = zeros(2,650);
 pixel=zeros(1,650);
 
 %This image is vertically oriented here
-%This chunk sorts through the following rows and parse through to find edges of the diameter
+%This chunk sorts through the following rows and parse through to find edges of the diameter of the jet
+%We start from row 151 to avoid capturing the relaxation chamber flange
 for jj = 151:800
     for ii = 1:Cols
         if blackandwhite(jj,ii) == 0
