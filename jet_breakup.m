@@ -19,13 +19,16 @@ for jj = 1:500
     % imshow(filteredimage) ; title('Filtered')
     % 
     [Rows, Col ] = size(blackandwhite); %get image size
-    
+    % This for loop finda\s the breakup distance on each frame
     for ii = 1:Col
         if sum(blackandwhite(:, ii))==0
             breakup_length(jj) = ii;
             break
         end
     end
+
+    %% This chunk recreates the frame with a red line going at breakup
+    % Comment it out if you do not want to save your videos again with breakup highlighted
     X = breakup_length(jj)*ones(1,Rows);
     Y = (1:Rows);
     figure(1)
@@ -35,7 +38,7 @@ for jj = 1:500
     hold off
     F(jj) = getframe(gcf);
     drawnow
-    
+    %%
 %     figure(2)
 %     imshow(transpose(image))
 %     hold on
@@ -51,7 +54,7 @@ t = t(breakup_length~=0);
 mean_breakup = mean(breakup_length);
 stdv_breakup = std(breakup_length);
 percent_discard = (1-(length(breakup_length))/num_images)*100;
-
+%% This writes the new video file for highlighted breakup
 writerObj = VideoWriter('C:\Users\Emazuddin Alif\OneDrive - University of Tennessee\Research-LAPTOP-OPTCM86V\Jet stability\Experiment videos\20A\real_img_w_breakup.avi');
 writerObj.FrameRate = 100;
 
@@ -62,6 +65,7 @@ for i = 1:length(F)
 end
 
 close(writerObj);
+%%
 % plot(t,transpose(breakup_length))
 % grid on
 % title('Video 5')
